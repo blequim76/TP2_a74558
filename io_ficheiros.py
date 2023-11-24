@@ -26,3 +26,15 @@ def le_de_ficheiro(nome_ficheiro):
         return pickle.load(f)
 
 
+def carrega_as_listas_dos_ficheiros():
+    """Carrega da Base de Dados [Ficheiros] os dados;
+        -> Clientes - de "lista_de_clientes.pk"
+        -> Veículos - de "lista_de_veiculos.pk"
+        -> Faturas - de "lista_de_faturas.pk"
+        """
+
+    lista_de_veiculos = le_de_ficheiro("lista_de_veiculos.pk")
+    lista_de_clientes = le_de_ficheiro("lista_de_clientes.pk")
+    lista_de_faturas = le_de_ficheiro("lista_de_faturas.pk")
+
+    return  lista_de_veiculos, lista_de_clientes, lista_de_faturas
