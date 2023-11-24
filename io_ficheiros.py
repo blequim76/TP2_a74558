@@ -15,6 +15,23 @@ def guarda_em_ficheiro(nome_do_ficheiro, dados):
         pickle.dump(dados, f)
 
 
+def guarda_as_listas_em_ficheiros(lista_de_veiculos, lista_de_clientes, lista_de_faturas):
+    """Guarda os dados registados em ficheiros
+
+    :param lista_de_clientes: nome_ficheiro_lista_de_clientes
+    :param lista_de_veiculos: nome_ficheiro_lista_de_veiculos
+    :param lista_de_faturas: nome_ficheiro_lista_de_faturas
+    """
+
+    op = input("Os dados nos ficheiros serão sobrepostos. Continuar (s/N)?")
+    if op in ['s', 'S']:
+        guarda_em_ficheiro(nome_ficheiro_lista_de_veiculos, lista_de_veiculos)
+        guarda_em_ficheiro(nome_ficheiro_lista_de_clientes, lista_de_clientes)
+        guarda_em_ficheiro(nome_ficheiro_lista_de_faturas, lista_de_faturas)
+    else:
+        print("Gravação cancelada...")
+
+
 def le_de_ficheiro(nome_ficheiro):
     """Lê os dados de um ficheiro
 
@@ -38,5 +55,3 @@ def carrega_as_listas_dos_ficheiros():
     lista_de_faturas = le_de_ficheiro(nome_ficheiro_lista_de_faturas)
 
     return  lista_de_veiculos, lista_de_clientes, lista_de_faturas
-
-
