@@ -2,14 +2,14 @@ import pickle
 
 from clientes import nome_ficheiro_lista_de_clientes
 from faturas import nome_ficheiro_lista_de_faturas
-
 from veiculos import nome_ficheiro_lista_de_veiculos
 
+def guarda_em_ficheiro(nome_do_ficheiro, dados):
+    """Guarda os dados recebidos num ficheiro
 
-# TODO: Copie para aqui o código de cada uma das funções nos
-# ficheiros com o nome io_ficheiros*.py e faça um commit de cada vez
-# Quando este ficheiro estiver completo com todas as suas funções,
-# deve ser o unico ficheiro io_ficheiros.py existente, deve apagar
-# todos os outros ficheiros io_ficheiros-*.py, e inclusive estes comentários
+    :param nome_do_ficheiro: nome do ficheiro onde vai guardar os dados
+    :param dados: dados a serem guardados
+    """
 
-# ...
+    with open(nome_do_ficheiro, "wb") as f:
+        pickle.dump(dados, f)
