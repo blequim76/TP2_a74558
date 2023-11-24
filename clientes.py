@@ -17,3 +17,9 @@ def cria_novo_cliente():
                "nif": nif}
 
     return cliente
+
+
+def imprime_lista_de_clientes(lista_de_clientes):
+    """Imprime a lista de Clientes"""
+
+imprime_lista(cabecalho="Lista de Clientes", lista=lista_de_clientes)
