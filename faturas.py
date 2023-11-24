@@ -23,3 +23,9 @@ def cria_nova_fatura(lista_de_clientes, lista_de_veiculos):
               "data": date.today()}
 
     return fatura
+
+
+def imprime_lista_de_faturas(lista_de_faturas):
+    """Imprime a lista de faturas"""
+
+    imprime_lista_de_faturas(cabecalho="Lista de Faturas", lista=lista_de_faturas)
