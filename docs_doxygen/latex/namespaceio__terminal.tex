@@ -1,0 +1,68 @@
+\doxysection{io\+\_\+terminal Namespace Reference}
+\hypertarget{namespaceio__terminal}{}\label{namespaceio__terminal}\index{io\_terminal@{io\_terminal}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceio__terminal_ab0c86eb7e7a02b6d5c6a9647d4a856c1}{imprime\+\_\+lista}} (cabecalho, lista)
+\item 
+\mbox{\hyperlink{namespaceio__terminal_ae1f916915b95afde488303df611dae07}{pause}} ()
+\item 
+\mbox{\hyperlink{namespaceio__terminal_ae70e8b76ab9f42bd243ec2876200a4e7}{pergunta\+\_\+id}} (questao, lista, mostra\+\_\+lista=False)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceio__terminal_ab0c86eb7e7a02b6d5c6a9647d4a856c1}\label{namespaceio__terminal_ab0c86eb7e7a02b6d5c6a9647d4a856c1} 
+\index{io\_terminal@{io\_terminal}!imprime\_lista@{imprime\_lista}}
+\index{imprime\_lista@{imprime\_lista}!io\_terminal@{io\_terminal}}
+\doxysubsubsection{\texorpdfstring{imprime\_lista()}{imprime\_lista()}}
+{\footnotesize\ttfamily io\+\_\+terminal.\+imprime\+\_\+lista (\begin{DoxyParamCaption}\item[{}]{cabecalho,  }\item[{}]{lista }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Imprime a :attr:`lista` na forma de uma tabela com um cabeçalho
+
+Recebe uma lista na forma [{"atrib1": valor1, "atrib2": valor2, ...},
+{"atrib1": valor1, "atrib2": valor2, ...}, ...] e imprime no terminal uma tabela
+na forma
+
+==  ======  ======
+id  atrib1  atrib2
+==  ======  ======
+0   valor1  valor2
+1   ...      ...
+==  ======  ======
+
+:param cabecalho: Cabecalho para a listagem
+:param lista: Lista a ser impressa
+\end{DoxyVerb}
+ 
+
+Definition at line \mbox{\hyperlink{io__terminal_8py_source_l00003}{3}} of file \mbox{\hyperlink{io__terminal_8py_source}{io\+\_\+terminal.\+py}}.
+
+\Hypertarget{namespaceio__terminal_ae1f916915b95afde488303df611dae07}\label{namespaceio__terminal_ae1f916915b95afde488303df611dae07} 
+\index{io\_terminal@{io\_terminal}!pause@{pause}}
+\index{pause@{pause}!io\_terminal@{io\_terminal}}
+\doxysubsubsection{\texorpdfstring{pause()}{pause()}}
+{\footnotesize\ttfamily io\+\_\+terminal.\+pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Faz uma pausa no programa e espera que o utilizador pressione ENTER\end{DoxyVerb}
+ 
+
+Definition at line \mbox{\hyperlink{io__terminal_8py_source_l00034}{34}} of file \mbox{\hyperlink{io__terminal_8py_source}{io\+\_\+terminal.\+py}}.
+
+\Hypertarget{namespaceio__terminal_ae70e8b76ab9f42bd243ec2876200a4e7}\label{namespaceio__terminal_ae70e8b76ab9f42bd243ec2876200a4e7} 
+\index{io\_terminal@{io\_terminal}!pergunta\_id@{pergunta\_id}}
+\index{pergunta\_id@{pergunta\_id}!io\_terminal@{io\_terminal}}
+\doxysubsubsection{\texorpdfstring{pergunta\_id()}{pergunta\_id()}}
+{\footnotesize\ttfamily io\+\_\+terminal.\+pergunta\+\_\+id (\begin{DoxyParamCaption}\item[{}]{questao,  }\item[{}]{lista,  }\item[{}]{mostra\+\_\+lista = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Rotina de controlo de saída da informação registada
+
+:param questao: Identifica a lista
+:param lista: Lista a ser impressa
+:param mostra_lista: Boleano, por defeito Falso [Nao mostra nada]
+:return:
+\end{DoxyVerb}
+ 
+
+Definition at line \mbox{\hyperlink{io__terminal_8py_source_l00040}{40}} of file \mbox{\hyperlink{io__terminal_8py_source}{io\+\_\+terminal.\+py}}.
+

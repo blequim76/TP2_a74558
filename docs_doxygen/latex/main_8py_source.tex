@@ -1,0 +1,79 @@
+\doxysection{main.\+py}
+\hypertarget{main_8py_source}{}\label{main_8py_source}\mbox{\hyperlink{main_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00001}\mbox{\hyperlink{namespacemain}{00001}}\ \textcolor{keyword}{from}\ clientes\ \textcolor{keyword}{import}\ cria\_novo\_cliente,\ imprime\_lista\_de\_clientes}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00002}00002\ \textcolor{keyword}{from}\ faturas\ \textcolor{keyword}{import}\ cria\_nova\_fatura,\ imprime\_lista\_de\_faturas}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00003}00003\ \textcolor{keyword}{from}\ io\_ficheiros\ \textcolor{keyword}{import}\ (carrega\_as\_listas\_dos\_ficheiros,}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00004}00004\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ guarda\_as\_listas\_em\_ficheiros)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00005}00005\ \textcolor{keyword}{from}\ io\_terminal\ \textcolor{keyword}{import}\ pause}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00006}00006\ \textcolor{keyword}{from}\ veiculos\ \textcolor{keyword}{import}\ cria\_novo\_veiculo,\ imprime\_lista\_de\_veiculos}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00008}\mbox{\hyperlink{namespacemain_a212a22164b22943139210e6170ace6d3}{00008}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespacemain_a212a22164b22943139210e6170ace6d3}{menu}}():}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00009}00009\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}Menu\ principal\ da\ aplicação"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00011}00011\ \ \ \ \ lista\_de\_veiculos\ =\ []}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00012}00012\ \ \ \ \ lista\_de\_clientes\ =\ []}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00013}00013\ \ \ \ \ lista\_de\_faturas\ =\ []}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00015}00015\ \ \ \ \ \textcolor{keywordflow}{while}\ \textcolor{keyword}{True}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00016}00016\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00017}00017\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ *********************************************************************}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00018}00018\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ :\ \ \ \ (-\/:\ OFICINA\ BARATINHA\ -\/\ RESISTIMOS\ A\ QUALQUER\ ORÇAMENTO\ :-\/)\ \ \ \ :}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00019}00019\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ *********************************************************************}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00020}00020\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ :\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00021}00021\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ :\ nc\ -\/\ novo\ cliente\ \ \ \ \ \ \ \ \ lc\ -\/\ listagem\ de\ clientes\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00022}00022\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ :\ nv\ -\/\ novo\ veiculo\ \ \ \ \ \ \ \ \ lv\ -\/\ listagem\ de\ veiculos\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00023}00023\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ :\ nf\ -\/\ nova\ fatura\ \ \ \ \ \ \ \ \ \ lf\ -\/\ listagem\ das\ faturas\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00024}00024\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ :\ ...\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00025}00025\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ :\ g\ -\/\ guarda\ tudo\ \ \ \ \ \ \ \ \ \ \ c\ -\/\ carrega\ tudo\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00026}00026\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ :\ x\ -\/\ sair\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00027}00027\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ :\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00028}00028\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ *********************************************************************}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00029}00029\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ "{}"{}"{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00031}00031\ \ \ \ \ \ \ \ \ op\ =\ input(\textcolor{stringliteral}{"{}opcao?"{}}).lower()}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00033}00033\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ op\ ==\ \textcolor{stringliteral}{"{}x"{}}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ exit()}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00036}00036\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{elif}\ op\ ==\ \textcolor{stringliteral}{"{}g"{}}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ guarda\_as\_listas\_em\_ficheiros(lista\_de\_veiculos,\ lista\_de\_clientes,\ lista\_de\_faturas)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00039}00039\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{elif}\ op\ ==\ \textcolor{stringliteral}{"{}c"{}}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ lista\_de\_veiculos,\ lista\_de\_clientes,\ lista\_de\_faturas\ =\ carrega\_as\_listas\_dos\_ficheiros()}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00042}00042\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{elif}\ op\ ==\ \textcolor{stringliteral}{"{}nc"{}}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ novo\_cliente\ =\ cria\_novo\_cliente()}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ novo\_cliente\ \textcolor{keywordflow}{is}\ \textcolor{keywordflow}{not}\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ lista\_de\_clientes.append(novo\_cliente)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00047}00047\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{elif}\ op\ ==\ \textcolor{stringliteral}{"{}nv"{}}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ novo\_veiculo\ =\ cria\_novo\_veiculo()}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ novo\_veiculo\ \textcolor{keywordflow}{is}\ \textcolor{keywordflow}{not}\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ lista\_de\_veiculos.append(novo\_veiculo)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00052}00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{elif}\ op\ ==\ \textcolor{stringliteral}{"{}nf"{}}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ len(lista\_de\_clientes)\ ==\ 0\ \textcolor{keywordflow}{or}\ len(lista\_de\_veiculos)\ ==\ 0:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}Não\ há\ clientes\ ou\ veiculos\ registados..."{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ nova\_fatura\ =\ cria\_nova\_fatura(lista\_de\_clientes,\ lista\_de\_veiculos)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00058}00058\ \ \ \ \ \ \ \ \ \ \ \ \ lista\_de\_faturas.append(nova\_fatura)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00060}00060\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{elif}\ op\ ==\ \textcolor{stringliteral}{"{}lc"{}}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ imprime\_lista\_de\_clientes(lista\_de\_clientes)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ pause()}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00064}00064\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{elif}\ op\ ==\ \textcolor{stringliteral}{"{}lv"{}}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ imprime\_lista\_de\_veiculos(lista\_de\_veiculos)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ pause()}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00068}00068\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{elif}\ op\ ==\ \textcolor{stringliteral}{"{}lf"{}}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00069}00069\ \ \ \ \ \ \ \ \ \ \ \ \ imprime\_lista\_de\_faturas(lista\_de\_faturas)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ pause()}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00072}00072\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00073}00073\ \textcolor{keywordflow}{if}\ \_\_name\_\_\ ==\ \textcolor{stringliteral}{"{}\_\_main\_\_"{}}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00074}00074\ \ \ \ \ \mbox{\hyperlink{namespacemain_a212a22164b22943139210e6170ace6d3}{menu}}()}
+
+\end{DoxyCode}

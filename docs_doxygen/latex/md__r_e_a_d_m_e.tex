@@ -1,0 +1,78 @@
+\chapter{README}
+\hypertarget{md__r_e_a_d_m_e}{}\label{md__r_e_a_d_m_e}\index{README@{README}}
+\label{md__r_e_a_d_m_e_autotoc_md0}%
+\Hypertarget{md__r_e_a_d_m_e_autotoc_md0}%
+ Este README documenta as etapas necessárias para colocar seu aplicativo em funcionamento.\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysubsection{\texorpdfstring{Para que serve este repositório?}{Para que serve este repositório?}}\label{md__r_e_a_d_m_e_autotoc_md1}
+
+\begin{DoxyItemize}
+\item Resumo rápido...
+\item Versão...
+\item \href{https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax}{\texttt{ Sintaxe básica de gravação e formatação no Git\+Hub}}
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysubsection{\texorpdfstring{Como faço para configurar?}{Como faço para configurar?}}\label{md__r_e_a_d_m_e_autotoc_md2}
+
+\begin{DoxyItemize}
+\item Resumo da configuração...
+\item Configuração...
+\item Dependências
+
+Para criar um ambiente virtual
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ python\ -\/m\ venv\ .venv}
+
+\end{DoxyCode}
+
+
+Depois, é necessário ativar o ambiente virtual
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ .venv\(\backslash\)Scripts\(\backslash\)activate}
+
+\end{DoxyCode}
+
+
+e depois instalar as livrarias necessárias
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ pip\ install\ -\/r\ requirements.txt}
+
+\end{DoxyCode}
+
+\item Configuração de banco de dados...
+\item Como fazer testes...
+\item Instruções de implantação...
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysubsubsection{\texorpdfstring{Documentação}{Documentação}}\label{md__r_e_a_d_m_e_autotoc_md3}
+Para gerar a configuração para o sphinx, crie uma pasta com o nome {\ttfamily doc}, e mude para essa pasta
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ mkdir\ doc}
+\DoxyCodeLine{\$\ cd\ doc}
+
+\end{DoxyCode}
+
+
+e depois escreva o comando abaixo, alterando o nome do(s) autor(es), e o nome da aplicação\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ sphinx-\/apidoc\ -\/F\ -\/f\ -\/A\ "{}nome\ do\ autor"{}\ -\/V\ 0\ -\/R\ 0.1\ -\/H\ "{}nome\ da\ aplicação"{}\ -\/e\ -\/P\ -\/a\ -\/-\/ext-\/autodoc\ -\/-\/ext-\/viewcode\ -\/-\/ext-\/todo\ -\/o\ .\ ./../src/}
+
+\end{DoxyCode}
+
+
+Posteriormente deve configurar o ficheiro {\ttfamily doc\textbackslash{}config.\+py} com as alterações que entenda necessárias\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysubsection{\texorpdfstring{Diretrizes de contribuição}{Diretrizes de contribuição}}\label{md__r_e_a_d_m_e_autotoc_md4}
+
+\begin{DoxyItemize}
+\item Testes de escrita...
+\item Revisão de código...
+\item Outras diretrizes...
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysubsection{\texorpdfstring{Com quem devo falar?}{Com quem devo falar?}}\label{md__r_e_a_d_m_e_autotoc_md5}
+
+\begin{DoxyItemize}
+\item Proprietário ou administrador do repo...
+\item Outro contato da comunidade ou equipe... 
+\end{DoxyItemize}

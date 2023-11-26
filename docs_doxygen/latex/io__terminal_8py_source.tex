@@ -1,0 +1,62 @@
+\doxysection{io\+\_\+terminal.\+py}
+\hypertarget{io__terminal_8py_source}{}\label{io__terminal_8py_source}\mbox{\hyperlink{io__terminal_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00001}\mbox{\hyperlink{namespaceio__terminal}{00001}}\ \textcolor{keyword}{from}\ tabulate\ \textcolor{keyword}{import}\ tabulate}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00003}\mbox{\hyperlink{namespaceio__terminal_ab0c86eb7e7a02b6d5c6a9647d4a856c1}{00003}}\ \textcolor{keyword}{def\ }imprime\_lista(cabecalho,\ lista):}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00004}00004\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}Imprime\ a\ :attr:\`{}lista\`{}\ na\ forma\ de\ uma\ tabela\ com\ um\ cabeçalho}}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00005}00005\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00006}00006\ \textcolor{stringliteral}{\ \ \ \ Recebe\ uma\ lista\ na\ forma\ [\{"{}atrib1"{}:\ valor1,\ "{}atrib2"{}:\ valor2,\ ...\},}}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00007}00007\ \textcolor{stringliteral}{\ \ \ \ \{"{}atrib1"{}:\ valor1,\ "{}atrib2"{}:\ valor2,\ ...\},\ ...]\ e\ imprime\ no\ terminal\ uma\ tabela}}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00008}00008\ \textcolor{stringliteral}{\ \ \ \ na\ forma}}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00009}00009\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00010}00010\ \textcolor{stringliteral}{\ \ \ \ ==\ \ ======\ \ ======}}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00011}00011\ \textcolor{stringliteral}{\ \ \ \ id\ \ atrib1\ \ atrib2}}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00012}00012\ \textcolor{stringliteral}{\ \ \ \ ==\ \ ======\ \ ======}}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00013}00013\ \textcolor{stringliteral}{\ \ \ \ 0\ \ \ valor1\ \ valor2}}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00014}00014\ \textcolor{stringliteral}{\ \ \ \ 1\ \ \ ...\ \ \ \ \ \ ...}}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00015}00015\ \textcolor{stringliteral}{\ \ \ \ ==\ \ ======\ \ ======}}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00016}00016\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00017}00017\ \textcolor{stringliteral}{\ \ \ \ :param\ cabecalho:\ Cabecalho\ para\ a\ listagem}}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00018}00018\ \textcolor{stringliteral}{\ \ \ \ :param\ lista:\ Lista\ a\ ser\ impressa}}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00019}00019\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00021}00021\ \ \ \ \ print(cabecalho)}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00023}00023\ \ \ \ \ \textcolor{keywordflow}{if}\ (len(lista)\ ==\ 0):}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00024}00024\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}Lista\ vazia"{}})}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00025}00025\ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00026}00026\ \ \ \ \ \ \ \ \ \textcolor{comment}{\#\ cabecalho\ da\ tabela}}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00027}00027\ \ \ \ \ \ \ \ \ lista\_a\_imprimir\ =\ [[\textcolor{stringliteral}{"{}id"{}}]\ +\ list(lista[0].keys())]}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00028}00028\ \ \ \ \ \ \ \ \ \textcolor{comment}{\#\ dados}}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00029}00029\ \ \ \ \ \ \ \ \ lista\_a\_imprimir.extend([[id]\ +\ list(d.values())\ \textcolor{keywordflow}{for}\ id,\ d\ \textcolor{keywordflow}{in}\ enumerate(lista)])}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00031}00031\ \ \ \ \ \ \ \ \ print(tabulate(lista\_a\_imprimir,\ headers=\textcolor{stringliteral}{"{}firstrow"{}},\ tablefmt=\textcolor{stringliteral}{'psql'}))}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00034}\mbox{\hyperlink{namespaceio__terminal_ae1f916915b95afde488303df611dae07}{00034}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespaceio__terminal_ae1f916915b95afde488303df611dae07}{pause}}():}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00035}00035\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}Faz\ uma\ pausa\ no\ programa\ e\ espera\ que\ o\ utilizador\ pressione\ ENTER"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00036}00036\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00037}00037\ \textcolor{stringliteral}{\ \ \ \ input("{}Pressione\ ENTER\ para\ continuar..."{})}}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00038}00038\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00039}00039\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00040}\mbox{\hyperlink{namespaceio__terminal_ae70e8b76ab9f42bd243ec2876200a4e7}{00040}}\ \textcolor{stringliteral}{def\ pergunta\_id(questao,\ lista,\ mostra\_lista=False):}}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00041}00041\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}Rotina\ de\ controlo\ de\ saída\ da\ informação\ registada}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00043}00043\ \ \ \ \ :param\ questao:\ Identifica\ a\ lista}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00044}00044\ \ \ \ \ :param\ lista:\ Lista\ a\ ser\ impressa}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00045}00045\ \ \ \ \ :param\ mostra\_lista:\ Boleano,\ por\ defeito\ Falso\ [Nao\ mostra\ nada]}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00046}00046\ \ \ \ \ :return:}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00047}00047\ \ \ \ \ "{}"{}"{}}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00049}00049\ \ \ \ \ if\ mostra\_lista:}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00050}00050\ \ \ \ \ \ \ \ \ imprime\_lista(cabecalho="{}"{},\ lista=lista)}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00052}00052\ \ \ \ \ while\ True:}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00053}00053\ \ \ \ \ \ \ \ \ id\ =\ int(input(questao))}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00054}00054\ \ \ \ \ \ \ \ \ if\ 0\ <=\ id\ <\ len(lista):}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ return\ id}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00056}00056\ \ \ \ \ \ \ \ \ else:}
+\DoxyCodeLine{\Hypertarget{io__terminal_8py_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ print(f"{}id\ inexistente.\ Tente\ de\ novo.\ Valores\ admitidos\ \{0\}\ -\/\ \{len(lista)\}"{})}
+
+\end{DoxyCode}
